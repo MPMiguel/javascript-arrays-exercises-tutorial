@@ -1,6 +1,9 @@
-let people = ['juan','ana','michelle','daniella','stefany','lucy','barak', 'emilio'];
+let people = ['juan', 'ana', 'michelle', 'daniella', 'stefany', 'lucy', 'barak', 'emilio'];
 
-//your code below
+const deletePerson = person => {
+  let newArray = people.filter(item => item !== person);
+  return newArray;
+}
 
 console.log(deletePerson('daniella'));
 console.log(deletePerson('juan'));
