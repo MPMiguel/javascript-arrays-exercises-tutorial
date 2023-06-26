@@ -5,15 +5,17 @@ let even = [];
 
 const mergeTwoList = arr => {
   for (let i = 0; i < arr.length; i++) {
-    if (i % 2 === 0) {
+    if (arr[i] % 2 === 0) {
       even.push(arr[i]);
     } else {
       odd.push(arr[i]);
     }
   }
-  
-  let newArr = even.concat(odd);
-  return newArr;
+
+  let mergedArray = odd.concat(even);
+  return mergedArray;
 }
 
 console.log(mergeTwoList(list_of_numbers));
+console.log(even)
+console.log(odd)
